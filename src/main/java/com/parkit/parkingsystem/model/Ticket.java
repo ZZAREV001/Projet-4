@@ -1,5 +1,7 @@
 package com.parkit.parkingsystem.model;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.Calendar;
 import java.util.Date;
 
@@ -19,10 +21,12 @@ public class Ticket {
         this.id = id;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP")
     public ParkingSpot getParkingSpot() {
         return parkingSpot;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP2")
     public void setParkingSpot(ParkingSpot parkingSpot) {
         this.parkingSpot = parkingSpot;
     }
@@ -43,18 +47,22 @@ public class Ticket {
         this.price = price;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP")
     public Date getInTime() {
         return inTime;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP2")
     public void setInTime(Date inTime) {
         this.inTime = inTime;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP")
     public Date getOutTime() {
         return outTime;
     }
 
+    @SuppressFBWarnings("EI_EXPOSE_REP2")
     public void setOutTime(Date outTime) {
         this.outTime = outTime;
     }

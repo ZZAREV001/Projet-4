@@ -15,7 +15,7 @@ import static com.parkit.parkingsystem.constants.ParkingType.CAR;
 
     public void calculateFare(Ticket ticket) {
 
-<span class="fc bfc" id="L18" title="All 4 branches covered.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
+<span class="pc bpc" id="L18" title="1 of 4 branches missed.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
 <span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot; + ticket.getOutTime().toString());</span>
         }
 
